@@ -1,7 +1,6 @@
 DESC `studydb`.`tbl_usr`;
 SELECT * FROM `studydb`.`tbl_usr`;
 
-
 DROP TABLE `studydb`.`tbl_usr`;
 
 CREATE TABLE `studydb`.`tbl_usr` (
@@ -47,6 +46,7 @@ INSERT INTO `studydb`.`tbl_usr` (`index`, `age`, `name`, `contact`, `email`)
 /* 3    34    박준형    010-1234-0003    junhyung.park@example.com
    4    29    최민수    010-5678-0004    minsoo.choi@example.com */
    
+   
    ### 레코드 삭제 ###
 -- DELETE FROM `<스키마>`.`<테이블>` WHERE <조건>;
 DELETE FROM `studydb`.`tbl_usr` WHERE `index`=2;
@@ -56,8 +56,6 @@ SELECT * FROM `studydb`.`tbl_usr`;
 ### 레코드 수정 ###
 -- UPDATE `<스키마>`.`<테이블>` SET `<변경할 열>` = <변경할 값> WHERE <조건>;
 UPDATE `studydb`.`tbl_usr` SET `name` = '최수민' WHERE `name`='최민수';
-
-
 
 
 ### 레코드 조회 ###
